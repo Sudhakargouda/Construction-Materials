@@ -1,0 +1,21 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Disallow: /admin/
+Disallow: /account/
+Disallow: /checkout/
+Disallow: /cart/
+Disallow: /login/
+Disallow: /register/
+Disallow: /reset-password/
+Disallow: /profile/
+Disallow: /orders/
+Disallow: /search/
+Disallow: /product-search/
+Disallow: /api/
+Disallow: /static/
+Disallow: /images/
+Disallow: /scripts/
+Disallow: /styles/
+Disallow: /fonts/
+
+Sitemap: https://constructionmaterials.netlify.app/sitemap.xml
