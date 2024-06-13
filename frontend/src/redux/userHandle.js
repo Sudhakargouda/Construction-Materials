@@ -26,7 +26,7 @@ import {
     updateCurrentUser,
 } from './userSlice';
 
-const REACT_APP_BASE_URL = "https://construction-materials-7ono.onrender.com";
+const REACT_APP_BASE_URL = "https://constructionmaterials.onrender.com";
 
 export const authUser = (fields, role, mode) => async (dispatch) => {
     dispatch(authRequest());
