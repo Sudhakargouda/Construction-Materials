@@ -1,21 +1,29 @@
-# https://www.robotstxt.org/robotstxt.html
+# robots.txt for an construction materials website
+
+# Allow all web crawlers access to the website
 User-agent: *
+Disallow:
+
+# Disallow web crawlers from accessing certain sensitive directories
 Disallow: /admin/
-Disallow: /account/
-Disallow: /checkout/
+Disallow: /user/
 Disallow: /cart/
+Disallow: /checkout/
+Disallow: /order-history/
 Disallow: /login/
 Disallow: /register/
-Disallow: /reset-password/
-Disallow: /profile/
-Disallow: /orders/
-Disallow: /search/
-Disallow: /product-search/
-Disallow: /api/
-Disallow: /static/
-Disallow: /images/
-Disallow: /scripts/
-Disallow: /styles/
-Disallow: /fonts/
 
-Sitemap: https://constructionmaterials.netlify.app/sitemap.xml
+# Disallow access to API endpoints
+Disallow: /api/
+
+# Disallow access to temporary or private files
+Disallow: /temp/
+Disallow: /private/
+
+# Allow access to the product pages
+Allow: /products/
+
+# Allow access to the categories pages
+Allow: /categories/
+
+

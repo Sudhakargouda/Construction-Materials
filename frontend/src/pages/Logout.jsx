@@ -42,10 +42,10 @@ const Logout = () => {
       property="og:description"
       content="Log out of your account to ensure your personal information remains secure. Come back soon to discover great deals on construction materials."
     />
-    <meta property="og:url" content="https://constructionmaterials.netlify.app/logout" />
+    <meta property="og:url" content="https://constructionmart.netlify.app/logout" />
     <meta name="twitter:card" content="summary" />
     <meta name="robots" content="noindex, nofollow" />
-    <link rel="canonical" href="https://constructionmaterials.netlify.app/logout" />
+    <link rel="canonical" href="https://constructionmart.netlify.app/logout" />
 </Helmet>
 
       <h1>{currentUser.name}</h1>

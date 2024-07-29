@@ -94,12 +94,12 @@ const ViewProduct = () => {
         <meta property="og:image" content={productImage || ""} />
         <meta
           property="og:url"
-          content={`https://constructionmaterials.netlify.app/products/${productID}`}
+          content={`https://constructionmart.netlify.app/products/${productID}`}
         />
         <meta name="twitter:card" content="summary_large_image" />
         <link
           rel="canonical"
-          href={`https://constructionmaterials.netlify.app/products/${productID}`}
+          href={`https://constructionmart.netlify.app/products/${productID}`}
         />
         {productDetails && (
           <script type="application/ld+json">
@@ -117,7 +117,7 @@ const ViewProduct = () => {
                 },
                 "offers": {
                     "@type": "Offer",
-                    "url": "https://constructionmaterials.netlify.app/products/${productID}",
+                    "url": "https://constructionmart.netlify.app/products/${productID}",
                     "priceCurrency": "INR",
                     "price": "${priceCost}",
                     "priceValidUntil": "2024-12-31",

@@ -88,10 +88,10 @@ const ViewOrder = () => {
         property="og:description"
         content="View details and reviews for a product order. Add your review and see others' feedback."
     />
-    <meta property="og:url" content="https://constructionmaterials.netlify.app/view-order" />
+    <meta property="og:url" content="https://constructionmart.netlify.app/view-order" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://constructionmaterials.netlify.app/view-order" />
+    <link rel="canonical" href="https://constructionmart.netlify.app/view-order" />
 </Helmet>
 
             {loading ?

@@ -19,6 +19,7 @@
     "jsonwebtoken": "^9.0.0",
     "mongoose": "^7.2.4",
     "nodemon": "^2.0.22",
-    "stripe": "^15.10.0"
+    "razorpay": "^2.9.4",
+    "stripe": "^15.12.0"
   }
 }

@@ -8,6 +8,10 @@ import ProductsMenu from "./customer/components/ProductsMenu";
 import { NewtonsCradle } from "@uiball/loaders";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import Footer from "./seller/components/Footer";
+import FloatingWhatsAppButton from "../components/FloatingWhatsAppButton";
+import Chatbott from "../components/Chatbott";
+
 
 const Home = () => {
   const adURL =
@@ -56,10 +60,10 @@ const Home = () => {
           content="Discover the best deals on construction materials including cement, steel, bricks, and more. Quality products at unbeatable prices!"
         />
         <meta property="og:image" content={adURL} />
-        <meta property="og:url" content="https://constructionmaterials.netlify.app/" />
+        <meta property="og:url" content="https://constructionmart.netlify.app/" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://constructionmaterials.netlify.app/" />
+        <link rel="canonical" href="https://constructionmart.netlify.app/" />
         <script type="application/ld+json">
           {`
       {
@@ -67,7 +71,7 @@ const Home = () => {
         "@type": "WebPage",
         "name": "Construction Materials",
         "description": "Discover the best deals on construction materials including cement, steel, bricks, and more. Quality products at unbeatable prices!",
-        "url": "https://constructionmaterials.netlify.app/"
+        "url": "https://constructionmart.netlify.app/"
       }
       `}
         </script>
@@ -84,6 +88,14 @@ const Home = () => {
         <ProductsMenu dropName="Categories" />
         <ProductsMenu dropName="Products" />
       </Container>
+
+      <VideoBox>
+        <video autoPlay controls loop>
+          <source src="/thirdvideo.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </VideoBox>
+
       <BannerBox>
         <Banner />
       </BannerBox>
@@ -124,18 +136,40 @@ const Home = () => {
               </Component>
 
               <Slide products={productData} title="Deals of the Day" />
-              <Slide products={productData} title="Suggested Items" />
-              <Slide products={productData} title="Discounts for You" />
-              <Slide products={productData} title="Recommended Items" />
             </>
           )}
         </>
       )}
+
+      <Footer /> 
+      <Chatbott />
+      <FloatingWhatsAppButton />
+      
     </div>
   );
 };
 
 export default Home;
+
+const VideoBox = styled(Box)`
+  width: 100%;
+  height: 85vh;
+  position: relative;
+  background: #000;
+
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media (max-width: 600px) {
+    height: 50vh;
+  }
+`;
 
 const StyledContainer = styled(Container)`
   display: flex;
@@ -143,15 +177,27 @@ const StyledContainer = styled(Container)`
   gap: 2rem;
   justify-content: center;
   align-items: center;
+  background-color: #F7EBDB;
+  transition: background-color 0.5s ease;
+
+  &:hover {
+    background-color: #E5D5C5;
+  }
 `;
 
 const BannerBox = styled(Box)`
   padding: 20px 10px;
-  background: #f2f2f2;
+  background: #F7EBDB;
+  transition: background-color 0.5s ease;
+
+  &:hover {
+    background-color: #E5D5C5;
+  }
 `;
 
 const Component = styled(Box)`
   display: flex;
+  background: #F7EBDB;
 `;
 
 const LeftComponent = styled(Box)(({ theme }) => ({

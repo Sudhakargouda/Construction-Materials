@@ -47,7 +47,7 @@ const SellerDashboard = () => {
         <>
             <Box sx={{ display: 'flex' }}>
                 <CssBaseline />
-                <AppBar open={open} position='absolute' sx={{ backgroundColor: "#4d1c9c" }}>
+                <AppBar open={open} position='absolute' sx={{ backgroundColor: "#3D3C38" }}>
                     <Toolbar sx={{ pr: '24px' }}>
                         <IconButton
                             edge="start"

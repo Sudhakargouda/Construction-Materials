@@ -74,3 +74,5 @@ const ProfileName = styled(Typography)`
 const ProfileText = styled(Typography)`
   margin-bottom: 10px;
 `;
+
+

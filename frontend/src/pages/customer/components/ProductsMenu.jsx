@@ -4,7 +4,7 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 
 import { KeyboardArrowDown, KeyboardArrowUp } from '@mui/icons-material'
-import { LightPurpleButton } from '../../../utils/buttonStyles';
+import { CharcoalButton } from '../../../utils/buttonStyles';
 import { useDispatch, useSelector } from 'react-redux';
 import { getProducts, getSearchedProducts } from '../../../redux/userHandle';
 import { useLocation, useNavigate } from 'react-router-dom';
@@ -57,7 +57,7 @@ const ProductsMenu = ({ dropName }) => {
 
     return (
         <div style={{ marginLeft: "2rem" }}>
-            <LightPurpleButton
+            <CharcoalButton
                 id="demo-customized-button"
                 aria-controls={open ? 'demo-customized-menu' : undefined}
                 aria-haspopup="true"
@@ -67,7 +67,7 @@ const ProductsMenu = ({ dropName }) => {
                 endIcon={open ? <KeyboardArrowUp /> : <KeyboardArrowDown />}
             >
                 {dropName}
-            </LightPurpleButton>
+            </CharcoalButton>
             {
                 dropName === "Categories" ?
                     <StyledMenu

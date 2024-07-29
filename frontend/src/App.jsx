@@ -18,8 +18,8 @@ import CheckoutAftermath from './pages/customer/pages/CheckoutAftermath';
 import ViewOrder from './pages/customer/pages/ViewOrder';
 import ConstructionCostCalculater from './components/ConstructionCostCalculater';
 import ConcreteForSlabsCalculater from './components/ConcreteForSlabsCalculater';
-import RawMaterial from './components/RawMaterial';
 import PaintCalculator from './components/PaintCalculater';
+import Contractor from './components/Contractor';
 
 
 
@@ -66,7 +66,7 @@ const App = () => {
       {(isLoggedIn && currentRole === "Customer") &&
         <>
           <Navbar />
-
+            
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/Home" element={<Home />} />
@@ -89,8 +89,11 @@ const App = () => {
             <Route path="/Logout" element={<Logout />} />
             <Route path="/construction-calculator" element={<ConstructionCostCalculater/>} />
             <Route path="/concrete-calculator" element={<ConcreteForSlabsCalculater/>} />
-            <Route path="/raw-material-calculator" element={<RawMaterial/>} />
+            <Route path="/contractor" element={<Contractor/>} />
             <Route path="/paints-calculator" element={<PaintCalculator/>} />
+      
+            
+            
           </Routes>
         </>
       }

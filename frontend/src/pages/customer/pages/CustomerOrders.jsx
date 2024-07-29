@@ -52,17 +52,17 @@ const CustomerOrders = () => {
     <meta name="keywords" content="construction materials, orders, view orders, sort orders, newest orders, oldest orders" />
     <meta name="author" content="Sudhakar" />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://constructionmaterials.netlify.app/customer/orders" />
+    <link rel="canonical" href="https://constructionmart.netlify.app//customer/orders" />
     <meta property="og:title" content="Construction Materials - My Orders" />
     <meta property="og:description" content="View and sort your orders. Sort by oldest or newest orders." />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://constructionmaterials.netlify.app/customer/orders" />
-    <meta property="og:image" content="https://constructionmaterials.netlify.app/images/your-thumbnail.jpg" />
+    <meta property="og:url" content="https://constructionmart.netlify.app/customer/orders" />
+    <meta property="og:image" content="https://constructionmart.netlify.app/images/your-thumbnail.jpg" />
     <meta property="og:image:alt" content="Thumbnail for My Orders page" />
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:title" content="Construction Materials - My Orders" />
     <meta property="twitter:description" content="View and sort your orders. Sort by oldest or newest orders." />
-    <meta property="twitter:image" content="https://constructionmaterials.netlify.app/images/your-thumbnail.jpg" />
+    <meta property="twitter:image" content="https://constructionmart.netlify.app/images/your-thumbnail.jpg" />
 </Helmet>
 
             {loading ?
