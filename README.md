@@ -1,5 +1,5 @@
 <h1 align="center">
-    SHOPCART: Ecommerce Site
+    e-Shop For Construction Material
 </h1>
 
 <h3 align="center">
